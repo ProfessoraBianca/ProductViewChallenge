@@ -1,0 +1,130 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("https://fonts.google.com/specimen/Montserrat");
+    font-family: "Fraunces";
+    src: url("https://fonts.google.com/specimen/Fraunces");
+}
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+main {
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    border-radius: 0.5rem;
+    max-width: 600px;
+    justify-content: space-around;
+    margin: 2rem;
+}
+#product {
+    display: block;
+    width: 300px;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+#product:hover {
+    transform: scale(1.5);
+    transform-origin: right;
+    transition-duration: 500ms;
+    border-radius: 10%;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1.5rem 2rem;
+}
+#tipo {
+    font-family: "Montserrat";
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 0.3rem;
+}
+#nome {
+    font-family: "Fraunces";
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2rem;
+}
+#desc {
+    font-family: "Montserrat";
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.5rem;
+}
+#promo {
+    font-family: "Fraunces";
+    font-size: 2rem;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+}
+#promo:hover {
+    animation: promohover 2s infinite ease-in-out;
+    color: hsl(158, 42%, 18%);
+}
+@keyframes promohover {
+    0%{
+        letter-spacing: initial;
+    }
+    50%{
+        letter-spacing: 0.1rem;
+    }
+    100%{
+        letter-spacing: initial;
+    }
+}
+#preço {
+    font-family: "Montserrat";
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: gray;
+    margin-left: 1rem;
+    text-decoration: line-through;
+    position: relative;
+    top: -0.5rem;
+}
+button {
+    border: none;
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 0.5rem;
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 1rem;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+button:hover {
+    background-color: hsl(158, 42%, 18%);
+    cursor: pointer;
+}
+@media (max-width: 570px) {
+    main {
+        max-width: 380px;
+        flex-direction: column;
+        margin: 0.5rem 1rem;
+    }
+    #product {
+        min-width: 100%;
+        border-top-right-radius: 0.5rem;
+        border-bottom-left-radius: 0;
+    }
+    .text {
+        padding: 1.5rem 1.2rem;
+        gap: 1rem;
+    }
+}
