@@ -57,7 +57,7 @@ Build out this recipe page and get it looking as close to the design as possible
 
 - Solution URL: [GitHub](https://github.com/ProfessoraBianca/ProductViewChallenge)
 
-- Live Site URL: [Recipe Page Challenge Site](https://recipe-page-challenge-gamma.vercel.app/)
+- Live Site URL: [Product View Challenge Site](https://product-view-challenge-pi.vercel.app/)
 
   
 
